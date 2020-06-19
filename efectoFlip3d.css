@@ -1,0 +1,164 @@
+body{
+    display: flex;
+
+    justify-content: center;
+    background: #ccc;
+    overflow: hidden;
+  align-items: center;
+}
+.contenedor-principal{
+    position: relative;
+   
+    background-image: linear-gradient(to top, #0f40ee, #283eef, #383cf0,
+     #443af1, #4f37f2);
+     height: 550px;
+  /*****Modificando El Ancho Al Gusto De Cada Uno******/
+     width: 33%;
+  /***********/
+     border-radius: 10px;
+     perspective: 1700px;
+  
+}
+
+.formulario-login{
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 2s;
+  
+}
+.lado{
+    backface-visibility: hidden;
+    box-shadow: 0 0 25px #333;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+}
+.lado-atras{
+    background: #333;
+    transform: rotateY(180deg)
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+.cont-hijo{
+    background-image: linear-gradient(to top, #0f40ee, #283eef,
+     #383cf0, #443af1, #4f37f2);
+     height: 80%;
+     width: 100%;
+     margin-top: 0px;
+     clip-path: circle(85.0% at 50% 5%)
+}
+.imagen{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 10px;
+    left: 35%;
+    margin-bottom: 50px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+}
+
+form{
+    margin: -70px auto;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+input{
+    background-image: linear-gradient(to left, #3f5ffb,
+     #485bfc, #5057fe, #5952fe, #614dff); 
+     width: 90%;
+     padding: 10px;
+     color: #fff;
+     font-family: sans-serif;
+     font-size: .9em;
+     text-align: center;
+     border-radius: 20px;
+     border:none;
+     margin-bottom: 14px;
+}
+.enlace{
+    color: #fff;
+    font-family: sans-serif;
+    font-size:.8em;
+    position: relative;
+    top: 0px;
+    left: 25%;
+    cursor: pointer;
+}
+
+button{
+    padding: 13px;
+    color: #fff;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin:auto;
+    position: relative;
+    top: -60px;
+    background-image: linear-gradient(to left, #2544d8, #223de2,
+     #2335eb, #2829f3, #3217fb);
+     border-radius: 15px;
+     border:none;
+     cursor: pointer;
+
+}
+
+span{
+    cursor: pointer;
+    font-family: sans-serif;
+    position: relative;
+    top: -75px;
+    text-align: center;
+    font-size: .8em;
+}
+/******clase que agregaremos con javascript***/
+.voltear{
+    transform: rotateY(-140deg);
+}
+
+/**********/
+
+.form-recuperar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 1.4em;
+    font-family: sans-serif;
+    
+}
+.form-recuperar form{
+    height: 70%;
+    width: 90%;
+    margin:auto;
+}
+
+.form-recuperar .boton{
+    background-image: linear-gradient(to right, #260dd4,
+     #4b37db, #6755e0, #7f72e4, #978de7); 
+     font-size: .8em;
+     margin-bottom: 40px
+}

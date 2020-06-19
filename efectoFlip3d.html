@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="efectoFlip3d.css" type="text/css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="form-recuperar">
+            <h1>Recuperacion De Password</h1>
+            <form action="">
+                <input type="password" placeholder="Contraseña Anterior">
+                <input type="password" placeholder="Contraseña Nueva">
+                <input type="password" placeholder="Repita Contraseña">
+                <input type="text" placeholder="Ingrese Correo">
+            </form>
+    
+            <button class="boton">Recuperar Contraseña</button>
+            <span onclick="funcion1();">Salir De La Aplicacion</span>
+        </div>
+    
+        <div class="formulario-login" id="caja">
+            <div class="contenedor lado">
+                <div class="cont-hijo">
+                    <div class="imagen">
+                        <img src="assets/img/escudo_actual.png" alt="">
+                    </div>
+    
+                    <form action="">
+                        <input type="text" placeholder="Ingrese Usuario">
+                        <input type="password" placeholder="Ingrese Contraseña">
+                        <span class="enlace" onclick="funcion1();">Olvidaste Tu Contraseña</span>
+                    </form>
+                </div>
+                <button>Login</button>
+                <span>No Puedes Ingresar A Tu Cuenta?</span>
+            </div>
+            <div class="lado lado-atras">
+    
+            </div>
+        </div>
+    </div>
+    
+<script>
+function funcion1(){
+    document.getElementById("caja").classList.toggle("voltear")
+}
+
+function funcion2(){
+    document.getElementById("caja").classList.toggle("voltear")
+}
+</script>      
+</body>
+</html>
+
+
+
